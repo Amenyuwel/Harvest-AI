@@ -5,3 +5,7 @@ keras==3.6.0
 numpy==1.24.3
 Pillow==10.4.0           
 opencv-python==4.10.0.84
+pymongo==4.10.1
+python-dotenv==1.0.1
+geocoder>=1.38.1
+requests>=2.31.0

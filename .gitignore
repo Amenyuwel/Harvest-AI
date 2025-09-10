@@ -1,6 +1,8 @@
 # Keras model files
 *.keras
 *.h5
+vgg/
+models/
 
 # Python cache files
 __pycache__/
@@ -13,6 +15,8 @@ venv/
 env/
 .venv/
 .env
+.env.*
+!.env.example
 
 
 # Jupyter Notebook checkpoints
@@ -40,6 +44,32 @@ checkpoints/
 
 # Data files (if you have datasets)
 *.csv
-*.json
 data/
 datasets/
+
+# Upload and storage directories
+uploads/
+storage/
+to_review/
+
+# Keep example JSON files but ignore user data
+!storage/to_review/.gitkeep
+storage/to_review/*.json
+storage/to_review/*.png
+storage/to_review/*.jpg
+storage/to_review/*.jpeg
+
+# Test files and mocks
+tests/
+__mocks__/
+coverage/
+
+# Environment specific files
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Temporary files
+*.tmp
+*.temp
