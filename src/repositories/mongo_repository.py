@@ -20,6 +20,8 @@ class MongoRepository(IPredictionRepository):
                        prediction: str, confidence: float, 
                        user_data: Dict[str, Any]) -> Dict[str, Any]:
         """Save prediction with metadata"""
+
+        
         # Store file in GridFS
         file_id = self.fs.put(file_bytes, filename=filename)
         
