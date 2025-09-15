@@ -49,7 +49,7 @@ datasets/
 
 # Upload and storage directories
 uploads/
-storage/
+storage/images/
 to_review/
 
 # Keep example JSON files but ignore user data
@@ -73,3 +73,6 @@ coverage/
 # Temporary files
 *.tmp
 *.temp
+
+# Cleanup scripts (optional)
+# cleanup_gridfs.py
